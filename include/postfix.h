@@ -6,6 +6,7 @@
 #include <string.h>
 #include <cstring>
 #include <iostream>
+#include <string>
 
 std::string infix2postfix(std::string str);
 

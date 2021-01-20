@@ -5,12 +5,12 @@
 
 template <typename  T>
 class MyStack {
-private:
+ private:
     T *stack;
     int max;
     int topindex;
 
-public:
+ public:
     explicit MyStack(int size) {
         max = size;
         topindex = -1;
