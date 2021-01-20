@@ -25,8 +25,8 @@ TEST(PostfixTest, test3) {
 }
 
 TEST(PostfixTest, test4) {
-  std::string inf = "(6 * (4 - 2) + 5) * (2.6 + 3 * 7) - 9";
+  std::string inf = "(6 * (4 - 4 - 2) + 5) * (2.6 + 3 * 7)";
   std::string postf = infix2postfix(inf);
-  std::string expected = "6 4 2 - * 5 + 2.6 3 7 * + * 9 -";
+  std::string expected = "6 4 4 - 2 - * 5 + 2.6 3 7 * + *";
   EXPECT_EQ(expected, postf);
 }

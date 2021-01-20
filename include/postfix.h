@@ -7,6 +7,6 @@
 #include <cstring>
 #include <iostream>
 
-std::string infix2prefix(std::string str);
+std::string infix2postfix(std::string str);
 
 #endif  // INCLUDE_POSTFIX_H_
